@@ -1,0 +1,79 @@
+ System.out.println("This program will show you the number of days in the month you choose ");
+     System.out.println("please ent the number of the month you want : ");
+     int month, days , d ;
+     String mnth;
+      Scanner sc = new Scanner (System.in);
+      month = sc.nextInt();
+      switch(month)
+      {
+          case 1:
+              days = 31 ;
+              mnth = "January" ;
+              System.out.println("The number of days of "+mnth+ " is " + days );
+              break;
+          case 2:
+              mnth = "February";
+              System.out.println("IF this year is Leap year Type 1 ");
+              d = sc.nextInt();
+              if (d == 1)
+              {
+              days = 29 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );
+              }
+              else 
+              {
+                  days = 28 ;
+                  System.out.println("The number of days of "+mnth+ " is " + days );
+              }
+              break;
+          case 3:
+              mnth = "March";
+              days = 31 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );
+              break;
+          case 4:
+              mnth = "April";
+              days = 30 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );     
+              break;
+          case 5:
+              mnth = "May";
+              days = 31 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );   
+              break;
+          case 6:
+              mnth = "June";
+              days = 30 ;
+              System.out.println("The number of days of "+mnth+ " is " + days ); 
+              break;
+          case 7:
+              mnth = "July";
+              days = 31 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );     
+              break;
+          case 8:
+              mnth = "August";
+              days = 31 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );    
+              break;
+          case 9:
+              mnth = "September";
+              days = 30 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );      
+              break;
+          case 10:
+              mnth = "October";
+              days = 31 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );      
+              break;
+          case 11:
+              mnth = "November";
+              days = 30 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );      
+              break;
+          case 12:
+              mnth = "December";
+              days = 31 ;
+              System.out.println("The number of days of "+mnth+ " is " + days );    
+              break;
+      }
