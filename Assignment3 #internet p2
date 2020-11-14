@@ -1,0 +1,38 @@
+public class 3_16
+{
+public static void main(String[] args)
+{
+//// Program description
+Scanner input = new Scanner(System.in);
+// Declaring the variables: types and names
+System.out.print("Enter two strings: ");
+String first = input.next();
+String second = input.next();
+String third = input.next();
+String largest = null;
+String middle = null;
+String smallest = null;
+if (first.compareTo(second) == 0 && second.compareTo(third) == 0)
+{
+largest = first;middle = second;
+smallest = third;
+}
+if (first.compareTo(second) == 0)
+{
+if (first.compareTo(third) > 0)
+{
+largest = first;middle = second;smallest = third;
+}
+else if (first.compareTo(third) < 0)
+{
+largest = third;
+middle = first;
+smallest = second;
+}
+}
+if (second.compareTo(third) == 0)
+{
+if (second.compareTo(first) > 0)
+{
+largest = second;middle = third;smallest = first;
+}
